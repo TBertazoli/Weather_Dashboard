@@ -23,7 +23,7 @@ var getWeatherReport = function (city) {
             $("#temperature").text("Temp: " + data.main.temp + "℉");
             $("#wind").text("Wind: " + data.wind.speed + "MPH");
             $("#humidity").text("Humidity: " + data.main.humidity + "%");
-            $("#icon").text(data.weather[0].icon);
+            $("#icon").attr("src", "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png");
         });
     });
 };
@@ -39,6 +39,7 @@ var displayFiveDayForecast = function (city) {
                 $('#day' + i + 'temp').text("Temp: " + data.list[i].main.temp + "℉");
                 $('#day' + i + 'wind').text('Wind: ' + data.list[i].wind.speed + 'MPH');
                 $('#day' + i + 'humidity').text("Humidity: " + data.list[i].main.humidity + "%");
+                $('#day' + i + 'icon').attr("src", "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + "@2x.png");
             }
 
         });
