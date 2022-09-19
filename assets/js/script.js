@@ -1,6 +1,7 @@
 var inputText = $("#inputtext");
 var cityWeather = $("#displaycity");
-var date = moment().format("MM/DD/YYYY");
+var todaysDate = moment().format("MM/DD/YYYY");
+
 
 
 var getCityLocation = function () {
@@ -19,7 +20,7 @@ var getWeatherReport = function (city) {
     fetch(cityApi).then(function (response) {
         response.json().then(function (data) {
             $("#cityname").text(data.name);
-            $("#date").text(date);
+            $("#date").text(todaysDate);
             $("#temperature").text("Temp: " + data.main.temp + "℉");
             $("#wind").text("Wind: " + data.wind.speed + "MPH");
             $("#humidity").text("Humidity: " + data.main.humidity + "%");
@@ -35,7 +36,9 @@ var displayFiveDayForecast = function (city) {
             console.log(data)
             $("#fivedayforecast").text("5-Day Forecast:");
             for (var i = 0; i < data.list.length; i++) {
-                console.log(data.list);
+                var incrementDate = moment().add(i + 1, 'd').format("MM/DD/YYYY");
+                console.log(incrementDate);
+                $('#day' + i).text(incrementDate);
                 $('#day' + i + 'temp').text("Temp: " + data.list[i].main.temp + "℉");
                 $('#day' + i + 'wind').text('Wind: ' + data.list[i].wind.speed + 'MPH');
                 $('#day' + i + 'humidity').text("Humidity: " + data.list[i].main.humidity + "%");
@@ -45,5 +48,4 @@ var displayFiveDayForecast = function (city) {
         });
     });
 }
-
 
