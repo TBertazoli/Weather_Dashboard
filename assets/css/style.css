@@ -7,7 +7,7 @@ body {
 }
 
 .title {
-    background-image: linear-gradient(to right, rgb(81, 226, 245, 1), rgb(157, 249, 239, .814), rgb(255, 168, 182, .84), rgb(162, 128, 137, 0.84));
+    background-image: linear-gradient(to right, rgb(81, 226, 245, 1), rgb(157, 249, 239, .84), rgb(255, 168, 182, .84), rgb(162, 128, 137, 0.84));
 }
 
 .btn {
@@ -21,11 +21,17 @@ body {
 }
 
 .btn:hover {
-    background-image: linear-gradient(rgb(157, 249, 239, .814), rgb(255, 168, 182, .84) 50%);
+    background-image: linear-gradient(rgb(157, 249, 239, .84), rgb(255, 168, 182, .84) 50%);
+}
+
+.single-line {
+    border-bottom: solid 1.5px rgb(125, 130, 131);
+    margin-top: 10px;
 }
 
 .btn-history {
-    background-color: rgb(81, 226, 245, 1);
+    background-color: rgb(125, 130, 131);
+    color: white;
     display: block;
     margin-top: 15px;
     font-weight: bold;
@@ -34,23 +40,30 @@ body {
     width: 100%;
 }
 
-.btn-hisyory:hover {
-    background-image: linear-gradient(rgb(157, 249, 239, .814), rgb(255, 168, 182, .84) 50%);
-}
-
-.five-day-wrapper div ul,
-.display-city li {
-    list-style: none;
+.btn-history:hover {
+    background-image: linear-gradient(rgb(125, 130, 131.84), rgb(255, 168, 182, .84) 50%);
 }
 
 .icon {
     width: 50px;
 }
 
+.display-city-wrapper {
+    border: solid black 3px;
+    padding: 10px;
+}
+
+.city-weather{
+    font-size: 20px;
+}
+
+.five-day-wrapper {
+    margin-top: 10px;    
+}
 .containers-styling {
     background-color: rgb(157, 249, 239, .814);
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    justify-content: flex-start;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 20px;
 }
+

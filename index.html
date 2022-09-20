@@ -23,68 +23,61 @@
                 <input type="text" id="inputtext" class="w-100 fs-4">
                 <button type="button" class="btn" onclick="getCityLocation()">Search</button>
             </div>
+            <div class="single-line"></div>
             <div id="storecitysearch"></div>
         </div>
-        <div>
-            <div id="displaycity" class="display-city">
-                <div>
-                    <h2 id="cityname"></h2>
+        <div class="ms-4 me-5" >
+            <div class="display-city-wrapper">
+                <div id="displaycity" class="d-flex">
+                    <div>
+                        <h2 id="cityname" class="me-2"></h2>
+                    </div>
                     <h2 id="date"></h2>
                     <img id="icon" class="icon">
                 </div>
-                <ul>
-                    <li id="temperature"></li>
-                    <li id="wind"></li>
-                    <li id="humidity"></li>
-                </ul>
+                <div class="city-weather">
+                    <p id="temperature"></p>
+                    <p id="wind"></p>
+                    <p id="humidity"></p>
+                </div>
             </div>
             <div id="fivedaywrapper" class="five-day-wrapper">
-                <h2 id="fivedayforecast" class="row"></h2>
+                <h2 id="fivedayforecast" class="mb-2"></h2>
                 <div class="five-day-container d-flex">
                     <div class="containers-styling">
-                        <ul>
-                            <li id="day0"></li>
-                            <img id="day0icon" class="icon">
-                            <li id="day0temp"></li>
-                            <li id="day0wind"></li>
-                            <li id="day0humidity"></li>
-                        </ul>
+                        <p id="day0"></p>
+                        <img id="day0icon" class="icon">
+                        <p id="day0temp"></p>
+                        <p id="day0wind"></p>
+                        <p id="day0humidity"></p>
                     </div>
                     <div class="containers-styling">
-                        <ul>
-                            <li id="day1"></li>
-                            <img id="day1icon" class="icon">
-                            <li id="day1temp"></li>
-                            <li id="day1wind"></li>
-                            <li id="day1humidity"></li>
-                        </ul>
+                        <p id="day1"></p>
+                        <img id="day1icon" class="icon">
+                        <p id="day1temp"></p>
+                        <p id="day1wind"></p>
+                        <p id="day1humidity"></p>
                     </div>
                     <div class="containers-styling">
-                        <ul>
-                            <li id="day2"></li>
-                            <img id="day2icon" class="icon">
-                            <li id="day2temp"></li>
-                            <li id="day2wind"></li>
-                            <li id="day2humidity"></li>
-                        </ul>
+                        <p id="day2"></p>
+                        <img id="day2icon" class="icon">
+                        <p id="day2temp"></p>
+                        <p id="day2wind"></p>
+                        <p id="day2humidity"></p>
                     </div>
                     <div class="containers-styling">
-                        <ul>
-                            <li id="day3"></li>
-                            <img id="day3icon" class="icon">
-                            <li id="day3temp"></li>
-                            <li id="day3wind"></li>
-                            <li id="day3humidity"></li>
-                        </ul>
+                        <p id="day3"></p>
+                        <img id="day3icon" class="icon">
+                        <p id="day3temp"></p>
+                        <p id="day3wind"></p>
+                        <p id="day3humidity"></p>
                     </div>
                     <div class="containers-styling">
-                        <ul>
-                            <li id="day4"></li>
-                            <img id="day4icon" class="icon">
-                            <li id="day4temp"></li>
-                            <li id="day4wind"></li>
-                            <li id="day4humidity"></li>
-                        </ul>
+                        <p id="day4"></p>
+                        <img id="day4icon" class="icon">
+                        <p id="day4temp"></p>
+                        <p id="day4wind"></p>
+                        <p id="day4humidity"></p>
                     </div>
                 </div>
             </div>
