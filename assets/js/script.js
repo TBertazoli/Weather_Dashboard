@@ -9,7 +9,8 @@ $(document).ready(() => {
 });
 
 //function to get the geocordinates
-var getCityLocation = function () {
+var getCityLocation = function (cityName) {
+    console.log(cityName);
     var coordinatesApi = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputText.val() + "&limit=1" + "&appid=4b10fa1681c38a96d7bd9c68c024b6a4";
     fetch(coordinatesApi).then(function (response) {
         response.json().then(function (cities) {
@@ -69,8 +70,13 @@ var displayCityHistory = function () {
     $('#storecitysearch').empty();
     for (var i = 0; i < cityHistory.length; i++) {
         console.log(cityHistory[i]);
-        var createElement = $("<button></button>").text(cityHistory[i]);
+        
+        var createElement = $("<button type='submit' class='btn' onclick='searchFromHistory(\"" + cityHistory[i] +"\")'></button>").text(cityHistory[i]);
         $('#storecitysearch').append(createElement);
     }
 }
 
+var searchFromHistory = function(cityName) {
+    inputText.val(cityName);
+    getCityLocation();
+}

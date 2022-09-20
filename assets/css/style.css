@@ -24,6 +24,20 @@ body {
     background-image: linear-gradient(rgb(157, 249, 239, .814), rgb(255, 168, 182, .84) 50%);
 }
 
+.btn-history {
+    background-color: rgb(81, 226, 245, 1);
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: rgb(255, 168, 182, .84);
+    width: 100%;
+}
+
+.btn-hisyory:hover {
+    background-image: linear-gradient(rgb(157, 249, 239, .814), rgb(255, 168, 182, .84) 50%);
+}
+
 .five-day-wrapper div ul,
 .display-city li {
     list-style: none;
