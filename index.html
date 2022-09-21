@@ -17,7 +17,7 @@
     <div class="d-flex">
         <div class="w-30">
             <div>
-                <h2 class="fw-bold">Search for a City:</h2>
+                <h2 class="fw-bold search">Search for a City:</h2>
                 <input type="text" id="inputtext" class="w-100 fs-4">
                 <button type="button" class="btn" onclick="getCityLocation()">Search</button>
             </div>
@@ -28,9 +28,9 @@
             <div class="display-city-wrapper">
                 <div id="displaycity" class="d-flex">
                     <div>
-                        <h2 id="cityname" class="me-2"></h2>
+                        <h2 id="cityname" class="me-2 city-name-display"></h2>
                     </div>
-                    <h2 id="date"></h2>
+                    <h2 id="date" class="display-date"></h2>
                     <img id="icon" class="icon">
                 </div>
                 <div class="city-weather">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div id="fivedaywrapper" class="five-day-wrapper">
-                <h2 id="fivedayforecast" class="mb-2"></h2>
+                <h2 id="fivedayforecast" class="mb-2 five-day-display"></h2>
                 <div class="five-day-container d-flex">
                     <div class="containers-styling">
                         <p id="day0"></p>

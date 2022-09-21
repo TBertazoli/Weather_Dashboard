@@ -50,17 +50,18 @@ body {
 
 .display-city-wrapper {
     border: solid black 3px;
-    padding: 10px;  
+    padding: 10px;
 
 }
 
-.city-weather{
+.city-weather {
     font-size: 20px;
 }
 
 .five-day-wrapper {
-    margin-top: 10px;    
+    margin-top: 10px;
 }
+
 .containers-styling {
     background-color: rgb(157, 249, 239, .814);
     margin-right: 20px;
@@ -68,40 +69,48 @@ body {
     font-size: 20px;
 }
 
-*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
-
-/*this will be applied on any screen smaller than 980px*/
-@media screen and (max-width:980px) {
-
-    .page_title,
-    .answer_button {
-        font-size: 16px;
-    }
-
-    .start_button {
-        font-size: 20px;
-    }
-
-    .page_content {
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .timer {
-        font-size: 15px;
-    }
-
-}
 
 /*MEDIA QUERY FOR TABLETS AND SMALLER*/
 /*this will be applied on any screen between 768px to 575px*/
 @media screen and (max-width:768px) {
+    .five-day-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
 
+    .containers-styling {        
+        margin-bottom: 15px;
+    }
 }
 
 /*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
 /*this will be applied on any screen smaller than 575px*/
 @media screen and (max-width:575px) {
+    .containers-styling {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
 
-   
+    .five-day-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .five-day-display {
+        font-size: 20px;
+    }
+
+    .city-name-display {
+        font-size: 20px;
+    }
+
+    .city-weather {
+        font-size: 15px;
+    }
+
+    .display-date {
+        font-size: 20px;
+    }
 }
