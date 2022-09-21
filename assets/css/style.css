@@ -50,7 +50,8 @@ body {
 
 .display-city-wrapper {
     border: solid black 3px;
-    padding: 10px;
+    padding: 10px;  
+
 }
 
 .city-weather{
@@ -67,3 +68,40 @@ body {
     font-size: 20px;
 }
 
+*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
+
+/*this will be applied on any screen smaller than 980px*/
+@media screen and (max-width:980px) {
+
+    .page_title,
+    .answer_button {
+        font-size: 16px;
+    }
+
+    .start_button {
+        font-size: 20px;
+    }
+
+    .page_content {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .timer {
+        font-size: 15px;
+    }
+
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
+/*this will be applied on any screen between 768px to 575px*/
+@media screen and (max-width:768px) {
+
+}
+
+/*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
+/*this will be applied on any screen smaller than 575px*/
+@media screen and (max-width:575px) {
+
+   
+}

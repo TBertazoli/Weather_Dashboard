@@ -45,6 +45,7 @@ var getWeatherReport = function (city) {
             $("#wind").text("Wind: " + data.wind.speed + "MPH");
             $("#humidity").text("Humidity: " + data.main.humidity + "%");
             $("#icon").attr("src", "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png");
+            $("#displaycitycontainer").removeClass("d-none");
         });
     });
 }
