@@ -14,7 +14,7 @@ var getCityLocation = function () {
     if (inputText.val() === "") {
         return;
     }
-    var coordinatesApi = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputText.val() + "&limit=1" + "&appid=4b10fa1681c38a96d7bd9c68c024b6a4";
+    var coordinatesApi = "https://api.openweathermap.org/geo/1.0/direct?q=" + inputText.val() + "&limit=1" + "&appid=4b10fa1681c38a96d7bd9c68c024b6a4";
     fetch(coordinatesApi).then(function (response) {
         response.json().then(function (cities) {
             var city = cities[0];
@@ -44,7 +44,7 @@ var getWeatherReport = function (city) {
             $("#temperature").text("Temp: " + data.main.temp + "℉");
             $("#wind").text("Wind: " + data.wind.speed + "MPH");
             $("#humidity").text("Humidity: " + data.main.humidity + "%");
-            $("#icon").attr("src", "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png");
+            $("#icon").attr("src", "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png");
             $("#displaycitycontainer").removeClass("d-none");
         });
     });
@@ -62,7 +62,7 @@ var displayFiveDayForecast = function (city) {
                 $('#day' + i + 'temp').text("Temp: " + data.list[i].main.temp + "℉");
                 $('#day' + i + 'wind').text('Wind: ' + data.list[i].wind.speed + 'MPH');
                 $('#day' + i + 'humidity').text("Humidity: " + data.list[i].main.humidity + "%");
-                $('#day' + i + 'icon').attr("src", "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + "@2x.png");
+                $('#day' + i + 'icon').attr("src", "https://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + "@2x.png");
             }
         });
     });
