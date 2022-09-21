@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5px;
+}
+
+.title {
+    background-image: linear-gradient(to right, rgb(81, 226, 245, 1), rgb(157, 249, 239, .84), rgb(255, 168, 182, .84), rgb(162, 128, 137, 0.84));
+}
+
+.btn {
+    background-color: rgb(81, 226, 245, 1);
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: rgb(255, 168, 182, .84);
+    width: 100%;
+}
+
+.btn:hover {
+    background-image: linear-gradient(rgb(157, 249, 239, .84), rgb(255, 168, 182, .84) 50%);
+}
+
+.single-line {
+    border-bottom: solid 1.5px rgb(125, 130, 131);
+    margin-top: 10px;
+}
+
+.btn-history {
+    background-color: rgb(125, 130, 131);
+    color: white;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: rgb(255, 168, 182, .84);
+    width: 100%;
+}
+
+.btn-history:hover {
+    background-image: linear-gradient(rgb(125, 130, 131.84), rgb(255, 168, 182, .84) 50%);
+}
+
+.icon {
+    width: 50px;
+}
+
+.display-city-wrapper {
+    border: solid black 3px;
+    padding: 10px;  
+
+}
+
+.city-weather{
+    font-size: 20px;
+}
+
+.five-day-wrapper {
+    margin-top: 10px;    
+}
+.containers-styling {
+    background-color: rgb(157, 249, 239, .814);
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
+
+/*this will be applied on any screen smaller than 980px*/
+@media screen and (max-width:980px) {
+
+    .page_title,
+    .answer_button {
+        font-size: 16px;
+    }
+
+    .start_button {
+        font-size: 20px;
+    }
+
+    .page_content {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .timer {
+        font-size: 15px;
+    }
+
+}
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER*/
+/*this will be applied on any screen between 768px to 575px*/
+@media screen and (max-width:768px) {
+
+}
+
+/*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
+/*this will be applied on any screen smaller than 575px*/
+@media screen and (max-width:575px) {
+
+   
+}

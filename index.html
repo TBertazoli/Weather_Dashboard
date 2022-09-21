@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather-Dashboard</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1 class="d-flex justify-content-center p-3">Weather Dashboard</h1>
+    </div>
+    <div class="d-flex">
+        <div class="w-30">
+            <div>
+                <h2 class="fw-bold">Search for a City:</h2>
+                <input type="text" id="inputtext" class="w-100 fs-4">
+                <button type="button" class="btn" onclick="getCityLocation()">Search</button>
+            </div>
+            <div class="single-line"></div>
+            <div id="storecitysearch"></div>
+        </div>
+        <div id="displaycitycontainer" class="ms-4 me-5 d-none">
+            <div class="display-city-wrapper">
+                <div id="displaycity" class="d-flex">
+                    <div>
+                        <h2 id="cityname" class="me-2"></h2>
+                    </div>
+                    <h2 id="date"></h2>
+                    <img id="icon" class="icon">
+                </div>
+                <div class="city-weather">
+                    <p id="temperature"></p>
+                    <p id="wind"></p>
+                    <p id="humidity"></p>
+                </div>
+            </div>
+            <div id="fivedaywrapper" class="five-day-wrapper">
+                <h2 id="fivedayforecast" class="mb-2"></h2>
+                <div class="five-day-container d-flex">
+                    <div class="containers-styling">
+                        <p id="day0"></p>
+                        <img id="day0icon" class="icon">
+                        <p id="day0temp"></p>
+                        <p id="day0wind"></p>
+                        <p id="day0humidity"></p>
+                    </div>
+                    <div class="containers-styling">
+                        <p id="day1"></p>
+                        <img id="day1icon" class="icon">
+                        <p id="day1temp"></p>
+                        <p id="day1wind"></p>
+                        <p id="day1humidity"></p>
+                    </div>
+                    <div class="containers-styling">
+                        <p id="day2"></p>
+                        <img id="day2icon" class="icon">
+                        <p id="day2temp"></p>
+                        <p id="day2wind"></p>
+                        <p id="day2humidity"></p>
+                    </div>
+                    <div class="containers-styling">
+                        <p id="day3"></p>
+                        <img id="day3icon" class="icon">
+                        <p id="day3temp"></p>
+                        <p id="day3wind"></p>
+                        <p id="day3humidity"></p>
+                    </div>
+                    <div class="containers-styling">
+                        <p id="day4"></p>
+                        <img id="day4icon" class="icon">
+                        <p id="day4temp"></p>
+                        <p id="day4wind"></p>
+                        <p id="day4humidity"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
