@@ -97,8 +97,3 @@ var searchFromHistory = function (cityName) {
     getCityLocation();
 }
 
-// function resetInputText() {
-//     
-
-// }
-// resetInputText();
